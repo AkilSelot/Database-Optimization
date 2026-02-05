@@ -51,42 +51,10 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 ---
 
 ## 🗄️ Database Files
-You can open the full database schema and queries directly by clicking the links below:
+You can open the full database schema and queries directly:
 
-- [Open `schema.sql`](schema.sql) → Full database tables and structure  
-- [Open `queries.sql`](queries.sql) → All optimized queries for testing
-
-<details>
-<summary>Optional Preview of SQL Files (click to expand)</summary>
-
-```sql
--- Example from schema.sql
-CREATE TABLE Customers (
-    CustomerID INT PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Email VARCHAR(100)
-);
-
-CREATE TABLE Orders (
-    OrderID INT PRIMARY KEY,
-    CustomerID INT,
-    OrderDate DATE,
-    TotalAmount DECIMAL(10,2),
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
-);
-```
-
-```sql
--- Example from queries.sql
-SELECT CustomerID, SUM(TotalAmount) AS TotalSales
-FROM Sales
-GROUP BY CustomerID
-ORDER BY TotalSales DESC
-LIMIT 10;
-```
-
-</details>
+- [Click to open `schema.sql`](schema.sql)  
+- [Click to open `queries.sql`](queries.sql)
 
 ---
 
