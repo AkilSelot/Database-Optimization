@@ -41,8 +41,6 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 
 Database-Optimization
 
-│
-
 ├── schema.sql → Database tables and structure  
 
 ├── queries.sql → Optimized queries for testing
