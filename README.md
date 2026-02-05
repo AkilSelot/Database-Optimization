@@ -1,4 +1,5 @@
-# 🗄️ Database Optimization
+🗄️ Database Optimization
+=======================
 
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
@@ -39,33 +40,35 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 
 ## 📁 Repository Structure
 
-Database-Optimization
-
-├── schema.sql → Database tables and structure  
-
+Database-Optimization/
+│
+├── schema.sql → Database tables and structure
 ├── queries.sql → Optimized queries for testing
+├── README.md → Project documentation
+└── images/
+├── schema/ → Screenshots of database schema
+│ ├── schema1.png
+│ ├── schema2.png
+│ └── ...
+└── performance/ → Screenshots of query execution and results
+├── performance1.png
+├── performance2.png
+└── ...
 
-├── README.md → Project documentation  
-
-└── images/ → Screenshots of schema or query performance  
 
 ---
 
 ## 🖼 Database Schema / SQL Example
 
-<details>
-<summary>Click to view SQL schema</summary>
-
+### Customers Table
 ```sql
--- Customers Table
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Email VARCHAR(100)
 );
-
--- Orders Table
+Orders Table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
@@ -73,8 +76,7 @@ CREATE TABLE Orders (
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
-
--- Sales Table
+Sales Table
 CREATE TABLE Sales (
     SaleID INT PRIMARY KEY,
     CustomerID INT,
@@ -82,3 +84,24 @@ CREATE TABLE Sales (
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
+🖼 Screenshots / Examples
+Database Schema
+
+
+Query Performance
+
+
+
+🚀 Getting Started
+Clone the repository:
+
+git clone https://github.com/AkilSelot/Database-Optimization.git
+Open schema.sql to create the database tables.
+
+Open queries.sql to test and optimize queries.
+
+Modify tables or indexes as needed to improve performance.
+
+Author
+Akil Selot
+
