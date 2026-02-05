@@ -47,18 +47,15 @@ Database-Optimization/
 ├── README.md → Project documentation
 └── images/
 ├── schema/ → Screenshots of database schema
-│ ├── schema1.png
-│ ├── schema2.png
-│ └── ...
 └── performance/ → Screenshots of query execution and results
-├── performance1.png
-├── performance2.png
-└── ...
 
 
 ---
 
 ## 🖼 Database Schema / SQL Example
+
+<details>
+<summary>Click to view SQL schema</summary>
 
 ### Customers Table
 ```sql
@@ -84,14 +81,23 @@ CREATE TABLE Sales (
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
+</details>
 🖼 Screenshots / Examples
 Database Schema
+Click to open folder: Schema Screenshots
+
+<details> <summary>View schema images</summary>
 
 
+</details>
 Query Performance
+Click to open folder: Performance Screenshots
+
+<details> <summary>View performance images</summary>
 
 
 
+</details>
 🚀 Getting Started
 Clone the repository:
 
@@ -104,4 +110,3 @@ Modify tables or indexes as needed to improve performance.
 
 Author
 Akil Selot
-
