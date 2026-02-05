@@ -39,20 +39,14 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 
 ## 📁 Repository Structure
 
-Database-Optimization
-
+Database-Optimization/
+│
 ├── schema.sql → Database tables and structure
-
 ├── queries.sql → Optimized queries for testing
-
 ├── README.md → Project documentation
-
 └── images/ → Screenshots of schema or query performance
-
 ├── schema/ → Database schema screenshots
-
 └── performance/ → Query execution screenshots
-
 
 
 ---
@@ -95,6 +89,20 @@ CREATE TABLE Sales (
 Query Performance
 View Performance Screenshots
 
+<details> <summary>Click to view queries.sql code</summary>
+-- Query 1: Select top 10 customers by total sales
+SELECT CustomerID, SUM(TotalAmount) AS TotalSales
+FROM Sales
+GROUP BY CustomerID
+ORDER BY TotalSales DESC
+LIMIT 10;
+
+-- Query 2: Find slow queries 
+EXPLAIN SELECT * FROM Orders WHERE OrderDate > '2026-01-01';
+
+-- Query 3: Optimize table by adding index
+CREATE INDEX idx_order_date ON Orders(OrderDate);
+</details>
 🚀 Getting Started
 Clone the repository:
 
@@ -107,3 +115,4 @@ Modify tables or indexes as needed to improve performance.
 
 Author
 Akil Selot
+
