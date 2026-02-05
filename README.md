@@ -39,16 +39,14 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 ---
 
 ## 📁 Repository Structure
-```
 Database-Optimization
+
+```
 ├── schema.sql → Database tables and structure
 ├── queries.sql → Optimized queries for testing
 ├── README.md → Project documentation
-└── images/
+└── images/ → Screenshots of schema or query performance
     ├── schema/ → Schema screenshots
-    │   ├── Screenshot 2026-02-04 235725.png
-    │   ├── Screenshot 2026-02-05 000149.png
-    │   └── Screenshot 2026-02-05 000308.png
     └── performance/ → Query performance screenshots
 ```
 
@@ -57,11 +55,8 @@ Database-Optimization
 ## 🖼 Screenshots / Examples
 
 ### Schema Screenshots
-Click to view schema images:
-
-[![Schema1](images/schema/Screenshot%202026-02-04%20235725.png)](images/schema/Screenshot%202026-02-04%20235725.png)  
-[![Schema2](images/schema/Screenshot%202026-02-05%20000149.png)](images/schema/Screenshot%202026-02-05%20000149.png)  
-[![Schema3](images/schema/Screenshot%202026-02-05%20000308.png)](images/schema/Screenshot%202026-02-05%20000308.png)
+Click to view all screenshots of the database schema:  
+[View Schema Screenshots](images/schema/)
 
 <details>
 <summary>SQL Schema Example (click to expand)</summary>
@@ -97,10 +92,9 @@ CREATE TABLE Sales (
 
 ---
 
-### Query Performance Screenshots
-Click to view query execution screenshots:
-
-[View Performance Screenshot Folder](images/performance/)
+### Query Performance
+Click to view all query execution screenshots:  
+[View Performance Screenshots](images/performance/)
 
 <details>
 <summary>Example Queries (queries.sql)</summary>
@@ -130,7 +124,7 @@ CREATE INDEX idx_order_date ON Orders(OrderDate);
 git clone https://github.com/AkilSelot/Database-Optimization.git
 ```
 
-2. Open `schema.sql` to create the database tables in MySQL or MariaDB.
+2. Open `schema.sql` to create the database tables in your MySQL or MariaDB server.
 
 3. Open `queries.sql` to test and optimize queries.
 
