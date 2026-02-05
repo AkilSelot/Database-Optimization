@@ -1,4 +1,4 @@
-# Database Optimization
+#🗄️Database Optimization
 
 This project focuses on SQL query optimization and database performance improvements.
 
