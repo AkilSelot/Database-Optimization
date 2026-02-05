@@ -93,6 +93,4 @@ git clone https://github.com/AkilSelot/Database-Optimization.git
 
 ## 👤 Author
 **Akil Selot**  
-Data Analyst  
-📧 [selotatik@gmail.com](mailto:selotatik@gmail.com)  
-🔗 LinkedIn: [https://www.linkedin.com/in/akil-selot-619a702a4](https://www.linkedin.com/in/akil-selot-619a702a4)
+Data Analyst 
