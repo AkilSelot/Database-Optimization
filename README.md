@@ -133,6 +133,5 @@ git clone https://github.com/AkilSelot/Database-Optimization.git
 ---
 
 ## 👤 Author
-
 **Akil Selot**  
-Data Analyst  
+Data Analyst
