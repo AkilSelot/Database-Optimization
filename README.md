@@ -1,20 +1,20 @@
-# 🗄️ Database Optimization
+🗄️ Database Optimization
 
-A professional SQL project focused on **query optimization and database performance improvement**.  
+A professional SQL project focused on **query optimization** and **database performance improvement**.
 
-This repository is designed as a foundation for **efficient database management** and practical SQL optimization.
+This repository is designed as a foundation for **efficient database management** and practical **SQL optimization techniques**.
 
 ---
 
 ## 🔍 Project Overview
 
-The goal of this project is to **improve database performance** by:
+The goal of this project is to improve database performance by:
 
 - Optimizing SQL queries for speed  
 - Designing efficient data models with indexes  
-- Testing query performance for large datasets  
+- Testing query performance on large datasets  
 
-This serves as a portfolio example of **practical SQL optimization techniques**.
+This serves as a portfolio example of practical SQL optimization techniques for **real-world business reporting**.
 
 ---
 
@@ -30,32 +30,38 @@ This serves as a portfolio example of **practical SQL optimization techniques**.
 
 ## 🛠 Tools & Technologies
 
-- **SQL** (MySQL, PostgreSQL compatible)  
+- SQL (MySQL / PostgreSQL compatible)  
 - Database schema design  
 - Query performance analysis  
+- Power BI / Excel (optional for visual reporting)  
 
 ---
 
 ## 📁 Repository Structure
 
 Database-Optimization/
-
 │
+├── schema.sql → Database tables and structure
+├── queries.sql → Optimized queries for testing
+├── README.md → Project documentation
+└── images/ → Screenshots of schema or query performance
 
-├── schema.sql → Database tables and structure  
 
-├── queries.sql → Optimized queries for testing  
+---
 
-├── README.md → Project documentation  
+## 🖼 Screenshots / Examples
 
-└── images/ → Screenshots of schema or query performance 
+### Database Schema
+![Database Schema](images/schema.png)
 
+### Query Performance
+![Query Performance](images/query_performance.png)
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone this repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/AkilSelot/Database-Optimization.git
