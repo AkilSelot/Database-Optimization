@@ -1,7 +1,6 @@
-🗄️ Database Optimization
-=======================
+# 🗄️ Database Optimization
 
-A professional SQL project focused on **query optimization** and **database performance improvement**.
+A professional SQL project focused on **query optimization** and **database performance improvement**.  
 
 This repository is designed as a foundation for **efficient database management** and practical **SQL optimization techniques**.
 
@@ -45,27 +44,31 @@ Database-Optimization/
 ├── schema.sql → Database tables and structure
 ├── queries.sql → Optimized queries for testing
 ├── README.md → Project documentation
-└── images/
-├── schema/ → Screenshots of database schema
-└── performance/ → Screenshots of query execution and results
+└── images/ → Screenshots of schema or query performance
+├── schema/ → Database schema screenshots
+└── performance/ → Query execution screenshots
 
 
 ---
 
-## 🖼 Database Schema / SQL Example
+## 🖼 Screenshots / Examples
+
+### Database Schema
+[View Schema Screenshots](images/schema/)
 
 <details>
-<summary>Click to view SQL schema</summary>
+<summary>Click to view SQL schema code</summary>
 
-### Customers Table
 ```sql
+-- Customers Table
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Email VARCHAR(100)
 );
-Orders Table
+
+-- Orders Table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
@@ -73,7 +76,8 @@ CREATE TABLE Orders (
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
-Sales Table
+
+-- Sales Table
 CREATE TABLE Sales (
     SaleID INT PRIMARY KEY,
     CustomerID INT,
@@ -82,18 +86,9 @@ CREATE TABLE Sales (
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 </details>
-## 🖼 Screenshots / Examples
+Query Performance
+View Performance Screenshots
 
-### Database Schema
-[View Schema Screenshots](images/schema/)
-
-### Query Performance
-[View Performance Screenshots](images/performance/)
-
-
-
-
-</details>
 🚀 Getting Started
 Clone the repository:
 
