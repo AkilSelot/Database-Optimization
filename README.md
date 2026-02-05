@@ -1,4 +1,4 @@
-🗄️ Database Optimization
+# 🗄️ Database Optimization
 
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
@@ -41,27 +41,41 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 
 Database-Optimization/
 │
-├── schema.sql → Database tables and structure
-├── queries.sql → Optimized queries for testing
-├── README.md → Project documentation
-└── images/ → Screenshots of schema or query performance
-
-
----
-
-## 🖼 Screenshots / Examples
-
-### Database Schema
-![Database Schema](images/schema.png)
-
-### Query Performance
-![Query Performance](images/query_performance.png)
+├── schema.sql → Database tables and structure  
+├── queries.sql → Optimized queries for testing  
+├── README.md → Project documentation  
+└── images/ → Screenshots of schema or query performance  
 
 ---
 
-## 🚀 Getting Started
+## 🖼 Database Schema / SQL Example
 
-1. Clone the repository:
+<details>
+<summary>Click to view SQL schema</summary>
 
-```bash
-git clone https://github.com/AkilSelot/Database-Optimization.git
+```sql
+-- Customers Table
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100)
+);
+
+-- Orders Table
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+-- Sales Table
+CREATE TABLE Sales (
+    SaleID INT PRIMARY KEY,
+    CustomerID INT,
+    SaleDate DATE,
+    TotalAmount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
