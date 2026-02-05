@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🗄️ Database Optimization
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
@@ -53,26 +51,37 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 ## 🗄️ Database Files
 You can open the full database schema and queries directly:
 
-- [Click to open `schema.sql`](schema.sql)  
-- [Click to open `queries.sql`](queries.sql)
+<details>
+<summary>Click to open SQL files</summary>
+
+- [Open `schema.sql`](schema.sql)  
+- [Open `queries.sql`](queries.sql)
+
+</details>
 
 ---
 
 ## 🖼 Screenshots / Examples
 
 ### Schema Screenshots
-Click to view schema images:
+<details>
+<summary>Click to view schema screenshots</summary>
 
 [![Schema1](images/schema/Screenshot%202026-02-04%20235725.png)](images/schema/Screenshot%202026-02-04%20235725.png)  
 [![Schema2](images/schema/Screenshot%202026-02-05%20000149.png)](images/schema/Screenshot%202026-02-05%20000149.png)  
 [![Schema3](images/schema/Screenshot%202026-02-05%20000308.png)](images/schema/Screenshot%202026-02-05%20000308.png)
 
+</details>
+
 ### Query Performance Screenshots
-Click to view query execution screenshots:
+<details>
+<summary>Click to view query performance screenshots</summary>
 
 [![Performance1](images/performance/Performance1.png)](images/performance/Performance1.png)  
 [![Performance2](images/performance/Performance2.png)](images/performance/Performance2.png)  
 [![Performance3](images/performance/Performance3.png)](images/performance/Performance3.png)
+
+</details>
 
 ---
 
@@ -87,7 +96,7 @@ git clone https://github.com/AkilSelot/Database-Optimization.git
 
 3. Open `queries.sql` to test and optimize queries.  
 
-4. Optionally, view screenshots in `/images/schema/` and `/images/performance/`.  
+4. Optionally, view screenshots by clicking the hidden sections in the README.  
 
 ---
 
