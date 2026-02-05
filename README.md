@@ -39,14 +39,20 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 ---
 
 ## 📁 Repository Structure
-Database-Optimization/
-│
+Database-Optimization
+
 ├── schema.sql → Database tables and structure
+
 ├── queries.sql → Optimized queries for testing
+
 ├── README.md → Project documentation
+
 └── images/ → Screenshots of schema or query performance
+
 ├── schema/ → Schema screenshots
+
 └── performance/ → Query performance screenshots
+
 
 
 ---
