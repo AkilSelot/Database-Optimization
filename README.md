@@ -82,18 +82,14 @@ CREATE TABLE Sales (
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 </details>
-🖼 Screenshots / Examples
-Database Schema
-Click to open folder: Schema Screenshots
+## 🖼 Screenshots / Examples
 
-<details> <summary>View schema images</summary>
+### Database Schema
+[View Schema Screenshots](images/schema/)
 
+### Query Performance
+[View Performance Screenshots](images/performance/)
 
-</details>
-Query Performance
-Click to open folder: Performance Screenshots
-
-<details> <summary>View performance images</summary>
 
 
 
