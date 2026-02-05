@@ -3,7 +3,7 @@
 # 🗄️ Database Optimization
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
-[![SQL](https://img.shields.io/badge/SQL-MySQL-blue)](https://www.mysql.com/)  
+[![SQL](https://img.shields.io/badge/SQL-MySQL-blue)](https://www.mysql.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/AkilSelot/Database-Optimization)
 
 </div>
@@ -39,46 +39,30 @@ This serves as a portfolio example of practical SQL optimization techniques for 
 ---
 
 ## 📁 Repository Structure
+Database-Optimization
 
-| File / Folder | Description |
-|---------------|-------------|
-| `schema.sql` | Database tables and structure |
-| `queries.sql` | Optimized queries for testing |
-| `README.md` | Project documentation |
-| `images/schema/` | Screenshots of database schema |
-| `images/performance/` | Screenshots of query performance |
+```
+├── schema.sql → Database tables and structure
+├── queries.sql → Optimized queries for testing
+├── README.md → Project documentation
+└── images/ → Screenshots of schema or query performance
+    ├── schema/ → Schema screenshots
+    └── performance/ → Query performance screenshots
+```
 
 ---
 
 ## 🖼 Screenshots / Examples
 
 ### Schema Screenshots
-Click to view schema images:
-
-[![Schema1](images/schema/Screenshot%202026-02-04%20235725.png)](images/schema/Screenshot%202026-02-04%20235725.png)  
-[![Schema2](images/schema/Screenshot%202026-02-05%20000149.png)](images/schema/Screenshot%202026-02-05%20000149.png)  
-[![Schema3](images/schema/Screenshot%202026-02-05%20000308.png)](images/schema/Screenshot%202026-02-05%20000308.png)
-
-### Query Performance Screenshots
-Click to view query execution screenshots:
-
-[![Performance1](images/performance/Performance1.png)](images/performance/Performance1.png)  
-[![Performance2](images/performance/Performance2.png)](images/performance/Performance2.png)  
-[![Performance3](images/performance/Performance3.png)](images/performance/Performance3.png)
-
----
-
-## 🗄️ Database Files
-You can open the full database schema and queries directly:
-
-- [Open `schema.sql`](schema.sql) → Contains full database tables and structure  
-- [Open `queries.sql`](queries.sql) → Contains all optimized queries for testing
+Click to view all screenshots of the database schema:  
+[View Schema Screenshots](images/schema/)
 
 <details>
-<summary>Preview SQL Files (click to expand)</summary>
+<summary>SQL Schema Example (click to expand)</summary>
 
 ```sql
--- Example from schema.sql
+-- Customers Table
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -86,6 +70,7 @@ CREATE TABLE Customers (
     Email VARCHAR(100)
 );
 
+-- Orders Table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
@@ -93,10 +78,28 @@ CREATE TABLE Orders (
     TotalAmount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
+
+-- Sales Table
+CREATE TABLE Sales (
+    SaleID INT PRIMARY KEY,
+    CustomerID INT,
+    SaleDate DATE,
+    TotalAmount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
 ```
+</details>
+
+---
+
+### Query Performance
+Click to view all query execution screenshots:  
+[View Performance Screenshots](images/performance/)
+
+<details>
+<summary>Example Queries (queries.sql)</summary>
 
 ```sql
--- Example from queries.sql
 -- Query 1: Select top 10 customers by total sales
 SELECT CustomerID, SUM(TotalAmount) AS TotalSales
 FROM Sales
@@ -104,7 +107,7 @@ GROUP BY CustomerID
 ORDER BY TotalSales DESC
 LIMIT 10;
 
--- Query 2: Find slow queries
+-- Query 2: Find slow queries 
 EXPLAIN SELECT * FROM Orders WHERE OrderDate > '2026-01-01';
 
 -- Query 3: Optimize table by adding index
@@ -112,6 +115,13 @@ CREATE INDEX idx_order_date ON Orders(OrderDate);
 ```
 </details>
 
+---
+🗄️ Database Files
+You can open the full database schema and queries directly:
+
+Open schema.sql → Contains full database tables and structure
+Open queries.sql → Contains all optimized queries for testing
+Preview SQL Files (click to expand)
 ---
 
 ## 🚀 Getting Started
@@ -121,7 +131,7 @@ CREATE INDEX idx_order_date ON Orders(OrderDate);
 git clone https://github.com/AkilSelot/Database-Optimization.git
 ```
 
-2. Open `schema.sql` to create the database tables in MySQL or MariaDB.
+2. Open `schema.sql` to create the database tables in your MySQL or MariaDB server.
 
 3. Open `queries.sql` to test and optimize queries.
 
