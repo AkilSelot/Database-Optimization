@@ -3,7 +3,7 @@
 # 🗄️ Database Optimization
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
-[![SQL](https://img.shields.io/badge/SQL-MySQL-blue)](https://www.mysql.com/)  
+[![SQL](https://img.shields.io/badge/SQL-MySQL-blue)](queries.sql)  
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/AkilSelot/Database-Optimization)
 
 </div>
