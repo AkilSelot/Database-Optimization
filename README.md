@@ -63,13 +63,11 @@ You can open the full database schema and queries directly:
 
 ## 🖼 Screenshots / Examples
 
-### Schema Screenshots
+### Database Schema Screenshots
 <details>
-<summary>Click to view schema screenshots</summary>
+<summary>Click to open schema screenshots</summary>
 
-[![Schema1](images/schema/Screenshot%202026-02-04%20235725.png)](images/schema/Screenshot%202026-02-04%20235725.png)  
-[![Schema2](images/schema/Screenshot%202026-02-05%20000149.png)](images/schema/Screenshot%202026-02-05%20000149.png)  
-[![Schema3](images/schema/Screenshot%202026-02-05%20000308.png)](images/schema/Screenshot%202026-02-05%20000308.png)
+📂 [Open Schema Screenshots Folder](images/schema)
 
 </details>
 
