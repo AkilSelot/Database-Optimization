@@ -73,13 +73,13 @@ You can open the full database schema and queries directly:
 
 </details>
 
+---
+
 ### Query Performance Screenshots
 <details>
-<summary>Click to view query performance screenshots</summary>
+<summary>Click to open query performance screenshots</summary>
 
-[![Performance1](images/performance/Performance1.png)](images/performance/Performance1.png)  
-[![Performance2](images/performance/Performance2.png)](images/performance/Performance2.png)  
-[![Performance3](images/performance/Performance3.png)](images/performance/Performance3.png)
+📂 [Open Performance Screenshots Folder](images/performance)
 
 </details>
 
@@ -90,16 +90,12 @@ You can open the full database schema and queries directly:
 
 ```bash
 git clone https://github.com/AkilSelot/Database-Optimization.git
-```
+Open schema.sql to create the database tables in MySQL or MariaDB.
 
-2. Open `schema.sql` to create the database tables in MySQL or MariaDB.  
+Open queries.sql to test and optimize queries.
 
-3. Open `queries.sql` to test and optimize queries.  
+Optionally, view screenshots by clicking the hidden sections in the README.
 
-4. Optionally, view screenshots by clicking the hidden sections in the README.  
-
----
-
-## 👤 Author
-**Akil Selot**  
-Data Analyst 
+👤 Author
+Akil Selot
+Data Analyst
