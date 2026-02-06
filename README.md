@@ -1,4 +1,5 @@
 <div align="center">
+
 # 🗄️ Database Optimization
 A professional SQL project focused on **query optimization** and **database performance improvement**.
 
